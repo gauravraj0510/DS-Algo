@@ -65,7 +65,12 @@ void insertMid(struct node *HEAD){
     if(TEMP != NULL){
         P->next = TEMP->next;
         TEMP->next = P;
-    }   
+    } 
+    else
+    {
+        printf("\nElement not found!\n");
+    }
+      
 }
 
 void display(struct node *HEAD){

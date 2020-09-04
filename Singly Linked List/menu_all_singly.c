@@ -218,11 +218,6 @@ struct node *deleteMid(struct node *HEAD){
     printf("\nEnter the data of node to be deleted:");
     scanf("%d",&key);
     PREV = HEAD;
-    if(HEAD->data == key)
-    {
-        HEAD = deleteStart(HEAD);
-        return HEAD;
-    }
     while (key != PREV->next->data && PREV->next != NULL)
     {
         PREV = PREV->next;
